@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1755751517534,
+    "description" : "",
+    "identifier" : "sqlserverconnector",
+    "lastModifiedTimestamp" : 1755751517534,
+    "name" : "sqlserver_connector",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
