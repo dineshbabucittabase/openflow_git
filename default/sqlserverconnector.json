@@ -7731,57 +7731,7 @@
       "scheduledState" : "ENABLED",
       "statelessFlowTimeout" : "1 min"
     } ],
-    "processors" : [ {
-      "autoTerminatedRelationships" : [ ],
-      "backoffMechanism" : "PENALIZE_FLOWFILE",
-      "bulletinLevel" : "WARN",
-      "bundle" : {
-        "artifact" : "runtime-salesforce-processors-nar",
-        "group" : "com.snowflake.openflow.runtime",
-        "version" : "2025.7.31.18"
-      },
-      "comments" : "",
-      "componentType" : "PROCESSOR",
-      "concurrentlySchedulableTaskCount" : 1,
-      "executionNode" : "ALL",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "42a1c0ab-74c8-3909-a617-d36b01a51e94",
-      "maxBackoffPeriod" : "10 mins",
-      "name" : "AbortQueryJob",
-      "penaltyDuration" : "30 sec",
-      "position" : {
-        "x" : -1208.4444885253906,
-        "y" : 319.78819274902344
-      },
-      "properties" : {
-        "Job ID" : "${jobId}"
-      },
-      "propertyDescriptors" : {
-        "Job ID" : {
-          "displayName" : "Job ID",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Job ID",
-          "sensitive" : false
-        },
-        "Salesforce Client" : {
-          "displayName" : "Salesforce Client",
-          "dynamic" : false,
-          "identifiesControllerService" : true,
-          "name" : "Salesforce Client",
-          "sensitive" : false
-        }
-      },
-      "retriedRelationships" : [ ],
-      "retryCount" : 10,
-      "runDurationMillis" : 0,
-      "scheduledState" : "ENABLED",
-      "schedulingPeriod" : "0 sec",
-      "schedulingStrategy" : "TIMER_DRIVEN",
-      "style" : { },
-      "type" : "com.snowflake.openflow.runtime.processors.salesforce.AbortQueryJob",
-      "yieldDuration" : "1 sec"
-    } ],
+    "processors" : [ ],
     "remoteProcessGroups" : [ ],
     "scheduledState" : "ENABLED",
     "statelessFlowTimeout" : "1 min"
@@ -7959,6 +7909,6 @@
   "snapshotMetadata" : {
     "author" : "DINESH",
     "flowIdentifier" : "sqlserverconnector",
-    "timestamp" : 1755885853968
+    "timestamp" : 1755886334995
   }
 }
