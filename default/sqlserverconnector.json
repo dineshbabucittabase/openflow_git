@@ -757,7 +757,7 @@
     "inputPorts" : [ ],
     "labels" : [ ],
     "maxConcurrentTasks" : 1,
-    "name" : "demo_SQLServer",
+    "name" : "dev_demo_SQLServer",
     "outputPorts" : [ ],
     "parameterContextName" : "SQLServer Ingestion Parameters (1)",
     "position" : {
@@ -7731,7 +7731,57 @@
       "scheduledState" : "ENABLED",
       "statelessFlowTimeout" : "1 min"
     } ],
-    "processors" : [ ],
+    "processors" : [ {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "runtime-salesforce-processors-nar",
+        "group" : "com.snowflake.openflow.runtime",
+        "version" : "2025.7.31.18"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "18c6cf07-c802-37e9-b07f-24af930a440c",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "AbortQueryJob",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : -1264.0,
+        "y" : 240.0
+      },
+      "properties" : {
+        "Job ID" : "${jobId}"
+      },
+      "propertyDescriptors" : {
+        "Job ID" : {
+          "displayName" : "Job ID",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Job ID",
+          "sensitive" : false
+        },
+        "Salesforce Client" : {
+          "displayName" : "Salesforce Client",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "Salesforce Client",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "com.snowflake.openflow.runtime.processors.salesforce.AbortQueryJob",
+      "yieldDuration" : "1 sec"
+    } ],
     "remoteProcessGroups" : [ ],
     "scheduledState" : "ENABLED",
     "statelessFlowTimeout" : "1 min"
@@ -7909,6 +7959,6 @@
   "snapshotMetadata" : {
     "author" : "DINESH",
     "flowIdentifier" : "sqlserverconnector",
-    "timestamp" : 1755875738133
+    "timestamp" : 1755878190039
   }
 }
